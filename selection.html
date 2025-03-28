@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="App Logo" class="logo">
+        <h1>Sign Language Recognition</h1>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+    <nav class="side-menu" id="sideMenu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul><li><a href="index.html">🏠 Home</a></li>
+            <li><a href="selection.html">🖐 Start Recognition</a></li>
+            <li><a href="chatbot.html">💬 Chatbot Support</a></li>
+            <li><a href="user-guide.html">📖 User Guide</a></li>
+        </ul>
+    </nav>
+    <!-- Menu Section -->
+    <section class="menu">
+        <h2>What do you want to do?</h2>
+
+        <div class="menu-options">
+            <div class="option" onclick="goToSignToText()">
+                <img src="images/sign-to-text.png" alt="Sign to Text Icon" class="menu-icon">
+                <h3>Sign to Text</h3>
+                <p>Recognize sign language and convert it to text.</p>
+            </div>
+
+            <div class="option" onclick="goToTextToSign()">
+                <img src="images/text-to-sign.png" alt="Text to Sign Icon" class="menu-icon">
+                <h3>Text to Sign</h3>
+                <p>Convert your typed text into sign language animations.</p>
+            </div>
+        </div>
+    </section>
+     <!-- Footer -->
+     <footer>
+        <p>Contact: info@signlanguageapp.com</p>
+        <p>&copy; 2025 Sign Language Recognition App. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function goToSignToText() {
+            window.location.href = "sign-to-text.html"; 
+        }
+
+        function goToTextToSign() {
+            window.location.href = "text-to-sign.html";
+        }
+    </script>
+
+</body>
+</html>

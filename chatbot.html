@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with Logo and Menu Button -->
+    <header class="header">
+        <img src="images/logo.png" alt="App Logo" class="logo">
+        <h1>Sign Language Recognition</h1>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="side-menu" id="sideMenu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="selection.html">🖐 Start Recognition</a></li>
+            <li><a href="chatbot.html">💬 Chatbot Support</a></li>
+            <li><a href="user-guide.html">📖 User Guide</a></li>
+        </ul>
+    </nav>
+
+    <!-- Chatbot Container -->
+    <div class="chat-container">
+        <h2>💬 Chatbot Support</h2>
+
+        <div class="chat-box" id="chatBox">
+            <p class="bot-message">🤖 Hello! How can I assist you today?</p>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: info@signlanguageapp.com</p>
+        <p>&copy; 2025 Sign Language Recognition App. All Rights Reserved.</p>
+    </footer>
+
+    <script src="chatbot.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+</html>
