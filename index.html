@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="menu.js"></script>
+</head>
+<body>
+<!-- Dark overlay -->
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Header with Logo & Menu -->
+    <header class="header">
+        <img src="images/logo.png" alt="App Logo" class="logo">
+        <h1>Sign Language Recognition</h1>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- Slide-in Navigation Menu -->
+    <nav class="side-menu" id="sideMenu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul><li><a href="index.html">🏠 Home</a></li>
+            <li><a href="selection.html">🖐 Start Recognition</a></li>
+            <li><a href="chatbot.html">💬 Chatbot Support</a></li>
+            <li><a href="user-guide.html">📖 User Guide</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About the App</h2>
+        <p>This app helps in converting sign language to text and vice versa, making communication easier for everyone.</p>
+        <img src="images/about1.png" alt="Illustration 1">
+        <img src="images/about2.png" alt="Illustration 2">
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <img src="images/feature1.png" alt="Feature 1">
+                <p>Sign to Text Conversion</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/feature2.png" alt="Feature 2">
+                <p>Text to Sign Animation</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/feature3.png" alt="Feature 3">
+                <p>AI-Powered Chatbot</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: info@signlanguageapp.com</p>
+        <p>&copy; 2025 Sign Language Recognition App. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
